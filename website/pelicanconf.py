@@ -7,7 +7,7 @@ import os
 # AUTHORSHIP AND WEBSITE INFO (Replace accordingly)
 ###################################################
 
-AUTHOR = u'Benoit Dherin'
+AUTHOR = u'Patrick Zhou'
 SITENAME = u'Data Analysis Project'
 SITESUBTITLE = u'Template using the iPython notebook'
 
@@ -43,7 +43,7 @@ LINKS = (('Project Report', 'nb4'),
 
 
 # Social widget
-SOCIAL = (('View on Github', 'https://github.com/BenoitDherin/data-analysis-template'),)
+SOCIAL = (('View on Github', 'https://github.com/Patrickzhoudata-analysis-template'),)
 
 DEFAULT_PAGINATION = 10
 
