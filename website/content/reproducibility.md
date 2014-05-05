@@ -1,6 +1,6 @@
 title: Reproducibility
-author: Benoit Dherin
-date: 2014-02-28
+author: Patrick Zhou
+date: 2014-05-05
 slug: reproducibility
 
 Reproducibility 

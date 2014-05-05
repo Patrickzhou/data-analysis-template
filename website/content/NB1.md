@@ -1,6 +1,6 @@
 title: Data Gathering 
-author: Benoit Dherin 
-date: 2014-03-01
+author: Patrick Zhou 
+date: 2014-05-05
 slug: nb1 
 
 {% notebook NB1_data_gathering.ipynb cells[:] %}
