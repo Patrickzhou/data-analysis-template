@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://github.com/Patrickzhou/data-analysis-template'
+SITEURL = 'https://Patrickzhou.github.io/data-analysis-template/'
 
 RELATIVE_URLS = False
 
