@@ -1611,11 +1611,11 @@ h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anch
 .highlight-ipynb .gr { color: #FF0000 } /* Generic.Error */
 .highlight-ipynb .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight-ipynb .gi { color: #00A000 } /* Generic.Inserted */
-.highlight-ipynb .go { color: #808080 } /* Generic.Output */
+.highlight-ipynb .go { color: #888888 } /* Generic.Output */
 .highlight-ipynb .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight-ipynb .gs { font-weight: bold } /* Generic.Strong */
 .highlight-ipynb .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight-ipynb .gt { color: #0040D0 } /* Generic.Traceback */
+.highlight-ipynb .gt { color: #0044DD } /* Generic.Traceback */
 .highlight-ipynb .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight-ipynb .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight-ipynb .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -1719,17 +1719,17 @@ init_mathjax();
     <!-- Open Graph tags -->
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="Project Report"/>
-            <meta property="og:url" content="http://patrickzhou.github.io/data-analysis-template/nb4.html"/>
-            <meta property="og:description" content="In this notebook, you'll sumarize your finding for the class presentation. The class presentation will use this notebook in slide mode, as I do during lecture time. You'll need to download the following zip file, unzip it, and run the following notebook install-support.ipynb to install the slide ..."/>
+            <meta property="og:url" content="https://Patrickzhou.github.io/data-analysis-template/nb4.html"/>
+            <meta property="og:description" content="Team members responsible for this notebook: List the team members contributing to this notebook, along with their responsabilities: team member 1 Jiayuan Zhou: team member 1 responsabilities team member 2 Haoyun Wu: team member 2 responsabilities team member 3 Shorhon Gong team member 3 responsabilities team member 4 Doe Gyi ..."/>
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://patrickzhou.github.io/data-analysis-template/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://patrickzhou.github.io/data-analysis-template/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://Patrickzhou.github.io/data-analysis-template/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://Patrickzhou.github.io/data-analysis-template/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="http://patrickzhou.github.io/data-analysis-template/theme/css/pygments.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://patrickzhou.github.io/data-analysis-template/theme/css/style.css" type="text/css"/>
+    <link href="https://Patrickzhou.github.io/data-analysis-template/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://Patrickzhou.github.io/data-analysis-template/theme/css/style.css" type="text/css"/>
 
-        <link href="http://patrickzhou.github.io/data-analysis-template/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://Patrickzhou.github.io/data-analysis-template/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Data Analysis Project ATOM Feed"/>
 
     
@@ -1766,7 +1766,7 @@ init_mathjax();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://patrickzhou.github.io/data-analysis-template/" class="navbar-brand">
+            <a href="https://Patrickzhou.github.io/data-analysis-template/" class="navbar-brand">
 Data Analysis Project            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -1777,7 +1777,7 @@ Data Analysis Project            </a>
                     <li><a href="nb1">Data Gathering</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://patrickzhou.github.io/data-analysis-template/archives.html"><i class="fa fa-th-list"></i>Archives</a></li>
+                <li><a href="https://Patrickzhou.github.io/data-analysis-template/archives.html"><i class="fa fa-th-list"></i>Archives</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -1792,7 +1792,7 @@ Data Analysis Project            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://patrickzhou.github.io/data-analysis-template/nb4.html"
+                    <a href="https://Patrickzhou.github.io/data-analysis-template/nb4.html"
                        rel="bookmark"
                        title="Permalink to Project Report">
                         Project Report
@@ -1805,7 +1805,7 @@ Data Analysis Project            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-03-04T00:00:00">Tue 04 March 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-05-05T00:00:00">Mon 05 May 2014</time>
     </span>
 
 
@@ -1815,33 +1815,172 @@ Data Analysis Project            </a>
                 </div>
                 <p>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this notebook, you'll sumarize your finding for the class presentation.</p>
-<p>The class presentation will use this notebook in slide mode, as I do during lecture time.</p>
-<p>You'll need to download the following <a href="https://github.com/fperez/nb-slideshow-template/archive/master.zip">zip file</a>, unzip it, and run the following notebook <code>install-support.ipynb</code> to install the slide capabilities.</p>
-<p>The notebook <code>notebook-slideshow-example.ipynb</code> will give you examples on how to use slides within the iPython notebook.</p>
-<p>You should also write this notebook so that you can convert it nicely into a pdf document using the commands</p>
-<pre><code>ipython nbconvert NB4_report.pynb --to latex
-pdflatex NB4_report.tex</code></pre>
-<p>See <a href="http://ipython.org/ipython-doc/rel-1.0.0/interactive/nbconvert.html">here</a> for further references on how to do that.</p>
-<p>In this notebook, you'll</p>
-<ul>
-<li><p>describe your problem as stated in the propectus</p></li>
-<li><p>comment on your data sources, on their format, on the difficulties to get them</p></li>
-<li><p>present the main challenge you encountered</p></li>
-<li><p>present your finding in the form of expresive graphics</p></li>
-</ul>
-<p>Be sure to include an introduction section motivating your visualizations, with a description of the substantive context and why it is interesting.</p>
-<p>Cite the source of the data and any other references that you used in carrying out your project.</p>
-</div>
-<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="team-members-responsible-for-this-notebook">Team members responsible for this notebook:</h2>
 <p>List the team members contributing to this notebook, along with their responsabilities:</p>
 <ul>
-<li>team member 1 <strong>name</strong>: team member 1 <strong>responsabilities</strong></li>
-<li>team member 2 <strong>name</strong>: team member 2 <strong>responsabilities</strong></li>
-<li>etc.</li>
+<li>team member 1 <strong>Jiayuan Zhou</strong>: team member 1 <strong>responsabilities</strong></li>
+<li>team member 2 <strong>Haoyun Wu</strong>: team member 2 <strong>responsabilities</strong></li>
+<li>team member 3 <strong>Shorhon Gong</strong> team member 3 <strong>responsabilities</strong></li>
+<li>team member 4 <strong>Doe Gyi</strong> team member 4 <strong>responsabilities</strong></li>
 </ul>
-<p>I advise you to work at least in pairs for each project notebook, as you did for the homework assignments. Of course, all team members may participate to each notebook.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="introduction">Introduction</h2>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our interest in analyzing this particular dataset primarily stems from the proximity of the topic to our personal lives. Moreso than the other suggested topics, levels of genetic expression affects and regulates all aspects of our daily lives and we wish to expand on our understanding of this phenomenon. Furthermore, the field of bioinformatics and genetic analysis is booming, with the results of these analyses regularly appearing in the media. Ideally, analyzing our own simulated dataset can enhance our understanding and experience in this increasingly pouplar field.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="about-the-data-source">About the data source</h2>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Our data consist 110 gene’s expression on 50 people, among which 25 are old and 25 are young. The value of the gene expression has already been taken a log. In this sense, our cleaned data frame has 110 rows and 50 columns.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>About the data source, the National Center for Biotechnology Information (NCBI) provides the Reference Sequence (RefSeq), used as the model from which our dataset was simulated. The provided gene expression levels derives from log_2 values of simulated muscle expression data. As shown in the data cleaning part, our data source is quite good originally.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="major-questions-we-want-to-solve">Major questions we want to solve</h2>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>1st:</strong> Which genes’ expressions are significantly affected by old and young?</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>2nd:</strong> Among these affected genes, how are they correlated?</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>3rd:</strong> What is the relation between olds’ gene expressions and young’s gene expressions?</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="main-challenges">Main challenges</h2>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As most of our members are not quite familiar with R packages, there are a lot of times we tried some complicated algorithms to accomplish some simple work which can be more easily done with the help of those packages.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since some of us have limited knowledge about biology, it's a little bit hard for us to determine what kind of method we should use to analyze this data at the beginning.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="our-analysis-of-the-data">Our analysis of the data</h2>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>At the first place, after formatted our data frame, let us visualize our data with a box plot.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture1.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The 50 boxes refer to 50 people where red represent old people, and blue represent. We can see that they are nice distributed with similar means. With this plot, the overall gene expressions seems to be the same. Now in the first question, we are interested in which genes are significantly affected by age. So we are now going to move from overall to each gene. For a certain gene, to check whether the 25 young data and the 25 old data are the same, we can perform a two sided t test. In order to check whether they are normally distributed, we may want to do a qqplot.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However there are 110 genes, so instead of qqplot for each gene, we are going to cluster them first and then find a representative for each cluster.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Before performing cluster let’s get a PAC plot first:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture12.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>From this plot we can see the division is quite clear, which means with variables old and young, it is reasonable to perform a cluster among those genes.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Furthermore we need to determine how many clusters we may need. Let’s do a hierarchical cluster first:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture2.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see that there are four clear clusters. However it doesn’t provide us with a representative for each cluster. There is a cluster algorithm called PAM cluster, which is similar to Kmeans but provide us with centers among our data points. Like Kmeans, it also require us to input the number of clusters we would like. Here we use a package called ‘RCurl’ to retrieve a method online:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture11.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see the splitting of the centers before 4 are quit obvious. For more reasoning behind, readers can refer to http://www.r-statistics.com/2010/06/clustergram-visualization-and-diagnostics-for-cluster-analysis-r-code/</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Thus by this plot, we reassured that it is reasonable to make four clusters among our data. Using PAM we have these four following as representatives:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>&quot;GI_42661568-S&quot; &quot;GI_42794621-S&quot; &quot;GI_20336322-I&quot; &quot;GI_12232386-S&quot;</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we can perform a qqplot of these four:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture3.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Notice that we only have 25 samples for each qqplot, based on this plot, it is reasonable to believe that they are normally distributed. Now we can perform our T test. Based on significant level 0.95, we have 12 genes selected where in the following table they are ranked by their t-values from high to low.</p>
+</div>
+    Names   Means_O   Means_Y    TValue
+1  GI_42656372-S  7.240768  7.615690 10.888902
+2  GI_21361917-S  6.946918  7.579921  8.977336
+3  GI_42656649-S 10.230926  9.552327  8.313379
+4  GI_20336322-I 12.815926 12.196562  8.014539
+5  GI_34098967-S 12.397995 11.801853  7.881306
+6  GI_37550263-S  7.494689  7.162127  7.810696
+7  GI_37546214-S  9.375734  8.854402  7.416075
+8  GI_14196467-A  8.185565  8.618797  6.790437
+9  GI_16905512-S 12.192950 12.698371  5.991191
+10 GI_37546867-S 11.218218 11.630941  5.708543
+11 GI_42794621-S  6.530306  6.578422  2.803505
+12 GI_37546343-S  9.701467  9.593338  2.706027
+
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let’s think about the rest of the genes, since they are not significantly affected by age, if we plot their old expression and young expression, the scatters should be close to the line y=x. And here follows the plot which does reassured our interpretation:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture5.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now our interest moves to the twelve genes that are significantly affected by the age. To visualize the affect, let us do a ggplot for the two genes with the top two T values:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture6.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see that old and young values are separated. Among these genes, some may behave in a similar way when age changes, and if we have data for one gene among them, we may be able to predict the other genes.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>R allows us to generate a correlation coefficient matrix. And with help of a package, we can visualize the correlations as the graph below:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture10.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now let’s select the top 4 highly correlated pairs and do a scatter plot :</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture13.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can see that the fourth one is already quite noisy. And the top three correlated correspond to 4th ~5th ,3rd ~5th , and 3rd ~4th which means the 3rd 4th and 5th are highly correlated, and here we can easily fit a line :</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture14.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we can step back a little bit and view at the whole dataset. If we do a regression between old and age, we can see the fitness are quite nice:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="visualization/picture15.png"></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For conclusion, we have find that 12 genes are significantly affected by age, and among them 3 genes are highly correlated. And for the whole data set, we can fit a reasonable regression. If deleting the significantly affected ones, our new regression should close to y=x.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>For further improvement: </strong></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>1: More samples should be collected</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>2: We need to getting more adept at data analysis techniques and the usage of R packages.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>3: For more precise interpretation, instead of ‘Old’ and ‘Young’, one can take ages range every ten years for more information.</p>
 </div></p>
             </div>
             <!-- /.entry-content -->
@@ -1855,7 +1994,7 @@ pdflatex NB4_report.tex</code></pre>
     <section>
         <ul class="list-group list-group-flush">
                 <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i>Social</h4></li>
-                    <li class="list-group-item"><a href="https://github.com/Patrickzhou/data-analysis-template.git"><i
+                    <li class="list-group-item"><a href="https://github.com/Patrickzhou/data-analysis-template"><i
                             class="fa fa-view on github-square fa-lg"></i>View on Github
                     </a></li>
 
@@ -1893,7 +2032,7 @@ pdflatex NB4_report.tex</code></pre>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2014 Patrickzhou
+         <div class="col-xs-10">&copy; 2014 Patrick Zhou
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>              <p><small>  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
@@ -1908,10 +2047,10 @@ pdflatex NB4_report.tex</code></pre>
 <script src="http://code.jquery.com/jquery.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://patrickzhou.github.io/data-analysis-template/theme/js/bootstrap.min.js"></script>
+<script src="https://Patrickzhou.github.io/data-analysis-template/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://patrickzhou.github.io/data-analysis-template/theme/js/respond.min.js"></script>
+<script src="https://Patrickzhou.github.io/data-analysis-template/theme/js/respond.min.js"></script>
 
 </body>
 </html>
