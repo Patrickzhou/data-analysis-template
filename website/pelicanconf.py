@@ -43,7 +43,7 @@ LINKS = (('Project Report', 'nb4'),
 
 
 # Social widget
-SOCIAL = (('View on Github', 'https://github.com/Patrickzhoudata-analysis-template'),)
+SOCIAL = (('View on Github', 'https://github.com/Patrickzhou/data-analysis-template'),)
 
 DEFAULT_PAGINATION = 10
 
