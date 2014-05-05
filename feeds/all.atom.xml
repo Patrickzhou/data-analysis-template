@@ -3,10 +3,10 @@
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="team-members-responsible-for-this-notebook"&gt;Team members responsible for this notebook:&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;team member 1 &lt;strong&gt;Jiayuan Zhou &lt;/strong&gt; Responsibilities:&lt;/li&gt;
-&lt;li&gt;team member 2 &lt;strong&gt;Shorhon Gong &lt;/strong&gt; Responsibilities:&lt;/li&gt;
-&lt;li&gt;team member 3 &lt;strong&gt;Haoyun Wu &lt;/strong&gt; Responsibilities:&lt;/li&gt;
-&lt;li&gt;team member 2 &lt;strong&gt;Doe Gyi &lt;/strong&gt; Responsibilities:&lt;/li&gt;
+&lt;li&gt;team member 1 **Jiayuan Zhou ** Responsibilities:&lt;/li&gt;
+&lt;li&gt;team member 2 **Shorhon Gong ** Responsibilities:&lt;/li&gt;
+&lt;li&gt;team member 3 **Haoyun Wu ** Responsibilities:&lt;/li&gt;
+&lt;li&gt;team member 2 **Doe Gyi ** Responsibilities:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
@@ -32,7 +32,7 @@ In&amp;nbsp;[1]:
 &lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_stream output_stdout"&gt;
 &lt;pre&gt;
-/home/oski/data-analysis-template/notebooks
+/home/oski/project/data-analysis-template/notebooks
 
 &lt;/pre&gt;
 &lt;/div&gt;
@@ -70,21 +70,6 @@ NB4_project_report.ipynb
 NB3_data_analysis.ipynb
 NB2_data_cleaning.ipynb
 NB1_data_gathering.ipynb
-cacert.pem
-
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="box-flex1 output_subarea output_stream output_stderr"&gt;
-&lt;pre&gt;
-mkdir: cannot create directory ‘../script’: File exists
-mkdir: cannot create directory ‘../data’: File exists
-mkdir: cannot create directory ‘../data/raw’: File exists
-mkdir: cannot create directory ‘../data/cleaned’: File exists
-mkdir: cannot create directory ‘../data/simulated’: File exists
-mkdir: cannot create directory ‘../visualizations’: File exists
 
 &lt;/pre&gt;
 &lt;/div&gt;
@@ -6974,7 +6959,7 @@ AAA89X/IK6V7ysKNggAAAABJRU5ErkJggg==
 &lt;p&gt;At the first place, after formatted our data frame, let us visualize our data with a box plot.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture1.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture1.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;The 50 boxes refer to 50 people where red represent old people, and blue represent. We can see that they are nice distributed with similar means. With this plot, the overall gene expressions seems to be the same. Now in the first question, we are interested in which genes are significantly affected by age. So we are now going to move from overall to each gene. For a certain gene, to check whether the 25 young data and the 25 old data are the same, we can perform a two sided t test. In order to check whether they are normally distributed, we may want to do a qqplot.&lt;/p&gt;
@@ -6986,7 +6971,7 @@ AAA89X/IK6V7ysKNggAAAABJRU5ErkJggg==
 &lt;p&gt;Before performing cluster let’s get a PAC plot first:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture12.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture12.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;From this plot we can see the division is quite clear, which means with variables old and young, it is reasonable to perform a cluster among those genes.&lt;/p&gt;
@@ -6995,13 +6980,13 @@ AAA89X/IK6V7ysKNggAAAABJRU5ErkJggg==
 &lt;p&gt;Furthermore we need to determine how many clusters we may need. Let’s do a hierarchical cluster first:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture2.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture2.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;We can see that there are four clear clusters. However it doesn’t provide us with a representative for each cluster. There is a cluster algorithm called PAM cluster, which is similar to Kmeans but provide us with centers among our data points. Like Kmeans, it also require us to input the number of clusters we would like. Here we use a package called ‘RCurl’ to retrieve a method online:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture11.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture11.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;We can see the splitting of the centers before 4 are quit obvious. For more reasoning behind, readers can refer to http://www.r-statistics.com/2010/06/clustergram-visualization-and-diagnostics-for-cluster-analysis-r-code/&lt;/p&gt;
@@ -7016,7 +7001,7 @@ AAA89X/IK6V7ysKNggAAAABJRU5ErkJggg==
 &lt;p&gt;Now we can perform a qqplot of these four:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture3.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture3.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Notice that we only have 25 samples for each qqplot, based on this plot, it is reasonable to believe that they are normally distributed. Now we can perform our T test. Based on significant level 0.95, we have 12 genes selected where in the following table they are ranked by their t-values from high to low.&lt;/p&gt;
@@ -7039,13 +7024,13 @@ AAA89X/IK6V7ysKNggAAAABJRU5ErkJggg==
 &lt;p&gt;Now let’s think about the rest of the genes, since they are not significantly affected by age, if we plot their old expression and young expression, the scatters should be close to the line y=x. And here follows the plot which does reassured our interpretation:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture5.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture5.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Now our interest moves to the twelve genes that are significantly affected by the age. To visualize the affect, let us do a ggplot for the two genes with the top two T values:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture6.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture6.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;We can see that old and young values are separated. Among these genes, some may behave in a similar way when age changes, and if we have data for one gene among them, we may be able to predict the other genes.&lt;/p&gt;
@@ -7054,31 +7039,31 @@ AAA89X/IK6V7ysKNggAAAABJRU5ErkJggg==
 &lt;p&gt;R allows us to generate a correlation coefficient matrix. And with help of a package, we can visualize the correlations as the graph below:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture10.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture10.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Now let’s select the top 4 highly correlated pairs and do a scatter plot :&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture13.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture13.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;We can see that the fourth one is already quite noisy. And the top three correlated correspond to 4th ~5th ,3rd ~5th , and 3rd ~4th which means the 3rd 4th and 5th are highly correlated, and here we can easily fit a line :&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture14.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture14.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Now we can step back a little bit and view at the whole dataset. If we do a regression between old and age, we can see the fitness are quite nice:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;img src="visualization/picture15.png"&gt;&lt;/p&gt;
+&lt;img src="visualization/picture15.png"&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;For conclusion, we have find that 12 genes are significantly affected by age, and among them 3 genes are highly correlated. And for the whole data set, we can fit a reasonable regression. If deleting the significantly affected ones, our new regression should close to y=x.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;strong&gt;For further improvement: &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;**For further improvement: **&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;1: More samples should be collected&lt;/p&gt;

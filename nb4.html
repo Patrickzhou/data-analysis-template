@@ -1867,7 +1867,7 @@ Data Analysis Project            </a>
 <p>At the first place, after formatted our data frame, let us visualize our data with a box plot.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture1.png"></p>
+<img src="visualization/picture1.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The 50 boxes refer to 50 people where red represent old people, and blue represent. We can see that they are nice distributed with similar means. With this plot, the overall gene expressions seems to be the same. Now in the first question, we are interested in which genes are significantly affected by age. So we are now going to move from overall to each gene. For a certain gene, to check whether the 25 young data and the 25 old data are the same, we can perform a two sided t test. In order to check whether they are normally distributed, we may want to do a qqplot.</p>
@@ -1879,7 +1879,7 @@ Data Analysis Project            </a>
 <p>Before performing cluster let’s get a PAC plot first:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture12.png"></p>
+<img src="visualization/picture12.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>From this plot we can see the division is quite clear, which means with variables old and young, it is reasonable to perform a cluster among those genes.</p>
@@ -1888,13 +1888,13 @@ Data Analysis Project            </a>
 <p>Furthermore we need to determine how many clusters we may need. Let’s do a hierarchical cluster first:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture2.png"></p>
+<img src="visualization/picture2.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see that there are four clear clusters. However it doesn’t provide us with a representative for each cluster. There is a cluster algorithm called PAM cluster, which is similar to Kmeans but provide us with centers among our data points. Like Kmeans, it also require us to input the number of clusters we would like. Here we use a package called ‘RCurl’ to retrieve a method online:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture11.png"></p>
+<img src="visualization/picture11.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see the splitting of the centers before 4 are quit obvious. For more reasoning behind, readers can refer to http://www.r-statistics.com/2010/06/clustergram-visualization-and-diagnostics-for-cluster-analysis-r-code/</p>
@@ -1909,7 +1909,7 @@ Data Analysis Project            </a>
 <p>Now we can perform a qqplot of these four:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture3.png"></p>
+<img src="visualization/picture3.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Notice that we only have 25 samples for each qqplot, based on this plot, it is reasonable to believe that they are normally distributed. Now we can perform our T test. Based on significant level 0.95, we have 12 genes selected where in the following table they are ranked by their t-values from high to low.</p>
@@ -1932,13 +1932,13 @@ Data Analysis Project            </a>
 <p>Now let’s think about the rest of the genes, since they are not significantly affected by age, if we plot their old expression and young expression, the scatters should be close to the line y=x. And here follows the plot which does reassured our interpretation:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture5.png"></p>
+<img src="visualization/picture5.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now our interest moves to the twelve genes that are significantly affected by the age. To visualize the affect, let us do a ggplot for the two genes with the top two T values:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture6.png"></p>
+<img src="visualization/picture6.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see that old and young values are separated. Among these genes, some may behave in a similar way when age changes, and if we have data for one gene among them, we may be able to predict the other genes.</p>
@@ -1947,31 +1947,31 @@ Data Analysis Project            </a>
 <p>R allows us to generate a correlation coefficient matrix. And with help of a package, we can visualize the correlations as the graph below:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture10.png"></p>
+<img src="visualization/picture10.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now let’s select the top 4 highly correlated pairs and do a scatter plot :</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture13.png"></p>
+<img src="visualization/picture13.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can see that the fourth one is already quite noisy. And the top three correlated correspond to 4th ~5th ,3rd ~5th , and 3rd ~4th which means the 3rd 4th and 5th are highly correlated, and here we can easily fit a line :</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture14.png"></p>
+<img src="visualization/picture14.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now we can step back a little bit and view at the whole dataset. If we do a regression between old and age, we can see the fitness are quite nice:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="visualization/picture15.png"></p>
+<img src="visualization/picture15.png">
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For conclusion, we have find that 12 genes are significantly affected by age, and among them 3 genes are highly correlated. And for the whole data set, we can fit a reasonable regression. If deleting the significantly affected ones, our new regression should close to y=x.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>For further improvement: </strong></p>
+<p>**For further improvement: **</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>1: More samples should be collected</p>
