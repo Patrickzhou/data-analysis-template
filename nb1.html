@@ -1611,11 +1611,11 @@ h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anch
 .highlight-ipynb .gr { color: #FF0000 } /* Generic.Error */
 .highlight-ipynb .gh { color: #000080; font-weight: bold } /* Generic.Heading */
 .highlight-ipynb .gi { color: #00A000 } /* Generic.Inserted */
-.highlight-ipynb .go { color: #888888 } /* Generic.Output */
+.highlight-ipynb .go { color: #808080 } /* Generic.Output */
 .highlight-ipynb .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
 .highlight-ipynb .gs { font-weight: bold } /* Generic.Strong */
 .highlight-ipynb .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight-ipynb .gt { color: #0044DD } /* Generic.Traceback */
+.highlight-ipynb .gt { color: #0040D0 } /* Generic.Traceback */
 .highlight-ipynb .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
 .highlight-ipynb .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
 .highlight-ipynb .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
@@ -1720,7 +1720,7 @@ init_mathjax();
             <meta property="og:type" content="article"/>
             <meta property="og:title" content="Data Gathering"/>
             <meta property="og:url" content="https://Patrickzhou.github.io/data-analysis-template/nb1.html"/>
-            <meta property="og:description" content="Team members responsible for this notebook: team member 1 **Jiayuan Zhou ** Responsibilities: team member 2 **Shorhon Gong ** Responsibilities: team member 3 **Haoyun Wu ** Responsibilities: team member 2 **Doe Gyi ** Responsibilities: Creating the directory structure In [1]: %%bash pwd /home/oski/project/data-analysis-template/notebooks In [2]: %%bash mkdir ../script ../data ../data ..."/>
+            <meta property="og:description" content="Team members responsible for this notebook: team member 1 **Jiayuan Zhou ** Responsibilities: team member 2 **Shorhon Gong ** Responsibilities: team member 3 **Haoyun Wu ** Responsibilities: team member 2 **Doe Gyi ** Responsibilities: Creating the directory structure In [1]: %%bash pwd /home/oski/data-analysis-template/notebooks In [2]: %%bash mkdir ../script ../data ../data/raw ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="https://Patrickzhou.github.io/data-analysis-template/theme/css/bootstrap.min.css" type="text/css"/>
@@ -1846,7 +1846,7 @@ In&nbsp;[1]:
 <div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_stream output_stdout">
 <pre>
-/home/oski/project/data-analysis-template/notebooks
+/home/oski/data-analysis-template/notebooks
 
 </pre>
 </div>
@@ -1884,6 +1884,21 @@ NB4_project_report.ipynb
 NB3_data_analysis.ipynb
 NB2_data_cleaning.ipynb
 NB1_data_gathering.ipynb
+cacert.pem
+
+</pre>
+</div>
+</div>
+
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stderr">
+<pre>
+mkdir: cannot create directory ‘../script’: File exists
+mkdir: cannot create directory ‘../data’: File exists
+mkdir: cannot create directory ‘../data/raw’: File exists
+mkdir: cannot create directory ‘../data/cleaned’: File exists
+mkdir: cannot create directory ‘../data/simulated’: File exists
+mkdir: cannot create directory ‘../visualizations’: File exists
 
 </pre>
 </div>
