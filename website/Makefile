@@ -71,6 +71,7 @@ stopserver:
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	cp -r ../notebooks/visualization $(OUTPUTDIR)/.
 
 github: publish
 	ghp-import $(OUTPUTDIR)
